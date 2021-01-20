@@ -60,7 +60,7 @@
           	          <div class="form-group">
           	            
           	        <label class="bmd-label-floating">Setor</label>
-          	        <select class="custom-select" name="id_setor">
+          	        <select class="custom-select" name="id_setor" required>
           	            <option selected value="">Selecione o Setor</option>
           	            <?php
 
