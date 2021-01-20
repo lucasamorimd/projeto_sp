@@ -39,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 	<!-- css files -->
 	<link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style2.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
