@@ -222,7 +222,7 @@ body {
 }
 
 .main-bg {
-    background: url(../images/b4.jpg) no-repeat center;
+    background: url(../../images/b4.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -251,7 +251,7 @@ h1 {
 }
 
 .image-style {
-    background: url(../images/m.jpg) no-repeat center;
+    background: url(../../images/m.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
