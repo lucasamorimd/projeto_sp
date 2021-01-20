@@ -2,6 +2,7 @@
 session_start();
 if(isset($_SESSION['usuariologado'])&& $_SESSION['userlogado'] == 1){
 	header('Location: painel/index.php');
+	die();
 }else{
 
 }
@@ -17,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html lang="en">
 
-<head><meta charset="gb18030">
+<head><meta charset="utf-8">
 	<title>Patrimonios - Login</title>
 	 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 	<!-- Meta tag Keywords -->
@@ -36,9 +37,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- Meta tag Keywords -->
 
 	<!-- css files -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
 	<!-- //css files -->
 

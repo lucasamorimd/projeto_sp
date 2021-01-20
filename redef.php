@@ -41,7 +41,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- //css files -->
