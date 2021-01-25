@@ -1,7 +1,7 @@
 <?php
 session_start();
-require '../vendor/setdeSessao.php';
-require '../vendor/listaSetor.php';
+require_once '../vendor/setdeSessao.php';
+require_once '../vendor/listaSetor.php';
 
 
  $form_titulo = "Chamados Realizados no Setor";
