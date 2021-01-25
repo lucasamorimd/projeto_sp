@@ -1,4 +1,4 @@
-Projeto surgiu na necessidade por gerenciamento dos itens da instituição
+Projeto surgiu na necessidade por gerenciamento dos itens da instituição onde trabalho,
 devido a dificuldade de gerenciar onde cada item estava alocado, causando assim
 a perda de alguns itens. O sistema conta com o gerenciamento de setores, itens cadastrados, solicitações de suporte.
 O sistema contém 4 tipos de perfil, Gestor de setor, funcionário de setor, Gestor do suporte e funcionários do suporte, 
