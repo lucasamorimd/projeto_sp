@@ -17,7 +17,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html lang="en">
 
-<head><meta charset="gb18030">
+<head>
+  <meta charset="utf-8" />
   <title>Patrimonios - Login</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <!-- Meta tag Keywords -->
