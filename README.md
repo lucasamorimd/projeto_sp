@@ -8,6 +8,10 @@ Perfil de Gestor do suporte:
 1234
 Senha: 123456
 
+Perfil de Funcionário do Suporte:
+1224
+Senha: 123456
+
 Perfil de Gestor de setores:
 1225
 Senha: 123456
