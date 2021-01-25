@@ -126,5 +126,4 @@ if (isset($_GET['trocasid'])) {
   </body>
 
 <?php include '../assets/carregaJS.php'; ?>
-
-  </html>      
+</html>
