@@ -73,5 +73,4 @@ if($id_setor == 1){
     </div>
   </body>
 <?php include_once '../assets/carregaJS.php'; ?>
-
-  </html>      
+</html>      
