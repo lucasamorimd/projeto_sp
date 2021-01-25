@@ -22,42 +22,42 @@ require '../vendor/listaSetor.php';
   <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-</head>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+  </head>
 
-<body>
-  
-  	<?php include '../assets/navbar.php'; ?>
+  <body>
+    
+    <?php include '../assets/navbar.php'; ?>
 
-        <!-- End Navbar -->
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                  <div class="fade-in-fwd">
-                      
-                  
-                <div class="card">
-                  <div class="card-header card-header-primary">
-                    <h4 class="card-title ">Chamados Encerrados</h4>
-                    <p class="card-category">Todos os chamados que você encerrou.</p>
-                  </div>
+    <!-- End Navbar -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fade-in-fwd">
+              
+              
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Chamados Encerrados</h4>
+                  <p class="card-category">Todos os chamados que você encerrou.</p>
+                </div>
 
-                  <div class="card-body">
-<?php include_once '../assets/chamado/tabelaChamadosEncerrados.php';?>
-                    </div>
-                  </div>
-    </div>
+                <div class="card-body">
+                  <?php include_once '../assets/chamado/tabelaChamadosEncerrados.php';?>
                 </div>
               </div>
+            </div>
           </div>
         </div>
-        <footer class="footer">
-
-        </footer>
       </div>
     </div>
-  </body>
+    <footer class="footer">
+
+    </footer>
+  </div>
+</div>
+</body>
 <?php include_once '../assets/carregaJS.php'; ?>
 
-  </html>
+</html>
