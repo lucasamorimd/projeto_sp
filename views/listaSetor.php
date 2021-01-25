@@ -21,27 +21,27 @@ require '../vendor/listaSetor.php';
   <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-</head>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+  </head>
 
-<body>
-  
-  	<?php include '../assets/navbar.php'; ?>
+  <body>
+    
+    <?php include '../assets/navbar.php'; ?>
 
-        <!-- End Navbar -->
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                  <div class="fade-in-fwd">
-                <div class="card">
-                  <div class="card-header card-header-primary">
-                    <h4 class="card-title ">Setores</h4>
-                    <p class="card-category"> Setores e seus respectivos coordenadores.</p>
-                  </div>
-                  <div class="card-body">
-                      
-                    <form action="" method="post">
+    <!-- End Navbar -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fade-in-fwd">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Setores</h4>
+                  <p class="card-category"> Setores e seus respectivos coordenadores.</p>
+                </div>
+                <div class="card-body">
+                  
+                  <form action="" method="post">
                     <div class="row">
                       <div class="col-md-2">
                         <div class="form-group">
@@ -54,49 +54,10 @@ require '../vendor/listaSetor.php';
                         
                       </div>
                     </div>
-                    </form>
-                    <?php if(isset($_POST['pesquisaNome'])){
-                      $nomeSetor = $_POST['pesquisaNome'];
-                      $pesqNome = $bdsetor->pesquisaSetorNome($nomeSetor);?>
-
-                      <div class="table-responsive">
-                        <table class="table">
-                          <thead class=" text-primary">
-                            <th>
-                              ID
-                            </th>
-                            <th>
-                              Setor
-                            </th>
-                            <th>
-                              Coordenador
-                            </th>
-                            
-                          </thead>
-                          <tbody>
-                            <?php foreach ($pesqNome as $ky) {?>
-                              
-                            <tr>
-                              <td>
-                                <?php echo $ky->id_setor;?>
-                              </td>                            
-                              <td>
-                                <?php echo $ky->nome_setor;?>
-                              </td>
-                              <td>
-                                <?php echo $ky->coordenador;?>
-                              </td>
-
-                            </tr>
-                            <?php }?>
-
-
-                          </tbody>
-                        </table>
-                      </div>
-
-                    <?php }else{
-                      $nomeSetor = null;?>
+                  </form>
+                  <?php if(isset($_POST['pesquisaNome'])){
+                    $nomeSetor = $_POST['pesquisaNome'];
+                    $pesqNome = $bdsetor->pesquisaSetorNome($nomeSetor);?>
 
                     <div class="table-responsive">
                       <table class="table">
@@ -113,40 +74,79 @@ require '../vendor/listaSetor.php';
                           
                         </thead>
                         <tbody>
-                        	<?php foreach ($setor as $key) {?>
-                        		
-                          <tr>
-                            <td>
-                              <?php echo $key->id_setor;?>
-                            </td>                            
-                            <td>
-                              <?php echo $key->nome_setor;?>
-                            </td>
-                            <td>
-                              <?php echo $key->coordenador;?>
-                            </td>
+                          <?php foreach ($pesqNome as $ky) {?>
+                            
+                            <tr>
+                              <td>
+                                <?php echo $ky->id_setor;?>
+                              </td>                            
+                              <td>
+                                <?php echo $ky->nome_setor;?>
+                              </td>
+                              <td>
+                                <?php echo $ky->coordenador;?>
+                              </td>
 
-                          </tr>
-                        	<?php }?>
+                            </tr>
+                          <?php }?>
+
+
+                        </tbody>
+                      </table>
+                    </div>
+
+                  <?php }else{
+                    $nomeSetor = null;?>
+
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead class=" text-primary">
+                          <th>
+                            ID
+                          </th>
+                          <th>
+                            Setor
+                          </th>
+                          <th>
+                            Coordenador
+                          </th>
+                          
+                        </thead>
+                        <tbody>
+                          <?php foreach ($setor as $key) {?>
+                            
+                            <tr>
+                              <td>
+                                <?php echo $key->id_setor;?>
+                              </td>                            
+                              <td>
+                                <?php echo $key->nome_setor;?>
+                              </td>
+                              <td>
+                                <?php echo $key->coordenador;?>
+                              </td>
+
+                            </tr>
+                          <?php }?>
 
 
                         </tbody>
                       </table>
                     </div>
                   <?php } ?>
-                    
-                  </div>
+                  
                 </div>
               </div>
-              </div>
+            </div>
           </div>
         </div>
-        <footer class="footer">
-
-        </footer>
       </div>
+      <footer class="footer">
+
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
 <?php include_once '../assets/carregaJS.php'; ?>
 
-  </html>      
+</html>      
