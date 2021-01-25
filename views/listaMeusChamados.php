@@ -3,10 +3,10 @@ session_start();
 require '../vendor/setdeSessao.php';
 require '../vendor/listaSetor.php';
 
- 
- $chamado = $bd_chamado->listachamado($matricula);
- $form_titulo = "Chamados Realizados";
- $form_sub_titulo = "Aqui estão listados os chamados abertos por você";
+
+$chamado = $bd_chamado->listachamado($matricula);
+$form_titulo = "Chamados Realizados";
+$form_sub_titulo = "Aqui estão listados os chamados abertos por você";
 
 ?>
 
@@ -27,43 +27,43 @@ require '../vendor/listaSetor.php';
   <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-</head>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+  </head>
 
-<body>
-  
-  	<?php include '../assets/navbar.php'; ?>
+  <body>
+    
+    <?php include '../assets/navbar.php'; ?>
 
-        <!-- End Navbar -->
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                  <div class="fade-in-fwd">
-                      
-                  
-                <div class="card">
-                  <div class="card-header card-header-primary">
-                    <h4 class="card-title "><?php echo $form_titulo;?></h4>
-                    <p class="card-category"><?php echo $form_sub_titulo;?></p>
-                  </div>
- <!-- AQUI É ONDE LISTA POR ID DE CHAMADO -->
-                    <div class="card-body">
-                      <?php include_once '../assets/chamado/listagemChamId.php';?>
-                    </div>
-
-
+    <!-- End Navbar -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fade-in-fwd">
+              
+              
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title "><?php echo $form_titulo;?></h4>
+                  <p class="card-category"><?php echo $form_sub_titulo;?></p>
                 </div>
+                <!-- AQUI É ONDE LISTA POR ID DE CHAMADO -->
+                <div class="card-body">
+                  <?php include_once '../assets/chamado/listagemChamId.php';?>
                 </div>
+
+
               </div>
+            </div>
           </div>
         </div>
-        <footer class="footer">
-
-        </footer>
       </div>
+      <footer class="footer">
+
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
 <?php include_once '../assets/carregaJS.php'; ?>
 
-  </html>      
+</html>      
