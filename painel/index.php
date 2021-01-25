@@ -20,14 +20,14 @@ if(isset($_SESSION['userlogado']) && $_SESSION['userlogado'] == 1){
 
 
 if(isset($_GET['mensagem'])){
-    $cor = $_SESSION['cor'];
-    $msg = $_GET['mensagem'];
-    $not =  "md.showNotification('top','right','".$msg.", ".strtoupper($_SESSION['nomeuser'])."!"."','".$cor."')";
-    
+  $cor = $_SESSION['cor'];
+  $msg = $_GET['mensagem'];
+  $not =  "md.showNotification('top','right','".$msg.", ".strtoupper($_SESSION['nomeuser'])."!"."','".$cor."')";
+  
 }else{
-    $cor = null;
-    $msg = null;
-    $not = null;
+  $cor = null;
+  $msg = null;
+  $not = null;
 }
 $fon = count($aachamados);
 
@@ -54,37 +54,37 @@ The above copyright notice and this permission notice shall be included in all c
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title id="not">
    <?php if($fon != 0 && $setorC == 1){ echo "(".$fon.") Patrimônios - Inicial";}else{echo "Patrimônios - Inicial" ;}?>  
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- Material Kit CSS -->
-  <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ </title>
+ <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+ <!--     Fonts and icons     -->
+ <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+ <!-- Material Kit CSS -->
+ <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-</head>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+  </head>
 
-<body id="body-not" class="" onload="<?php echo $not;?>">
-  <div class="wrapper ">
-<?php include_once '../assets/navbar.php';?>
+  <body id="body-not" class="" onload="<?php echo $not;?>">
+    <div class="wrapper ">
+      <?php include_once '../assets/navbar.php';?>
       <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-     
-    
+         
+          
 
-<?php include_once '../views/inicial.php';?>
+          <?php include_once '../views/inicial.php';?>
 
-    </div>
-  </div>
+        </div>
+      </div>
 
-<?php include_once '../assets/carregaJS.php'; ?>
-<?php if($id_setor == 1){include '../lib/jssocket/websocket.php';}else{
-  
-} ?>
+      <?php include_once '../assets/carregaJS.php'; ?>
+      <?php if($id_setor == 1){include '../lib/jssocket/websocket.php';}else{
+        
+      } ?>
 
-</body>
+    </body>
 
-</html>
+    </html>
