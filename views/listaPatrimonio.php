@@ -23,51 +23,51 @@ $anterior = $p_a - 1;
   <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-</head>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+  </head>
 
-<body>
-  
-  	<?php include_once '../assets/navbar.php'; ?>
+  <body>
+    
+    <?php include_once '../assets/navbar.php'; ?>
 
-        <!-- End Navbar -->
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                  <div class="fade-in-fwd">
-                <div class="card">
-                  <div class="card-header card-header-primary">
-                    <h4 class="card-title ">Patrimônios </h4>
-                    <p class="card-category"> Lista dos patrimônios e os setores alocados.</p>
-                    
-                  </div>
-                  <div class="card-body">
-                    <div class="table-responsive">
+    <!-- End Navbar -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fade-in-fwd">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Patrimônios </h4>
+                  <p class="card-category"> Lista dos patrimônios e os setores alocados.</p>
+                  
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
 
-                      <?php if(isset($_POST['pesquisaid'])):
-                        require_once '../models/DAO/bd_patrimonio.php';
+                    <?php if(isset($_POST['pesquisaid'])):
+                      require_once '../models/DAO/bd_patrimonio.php';
 
-                        $patrid = $_POST['pesquisaid'];
+                      $patrid = $_POST['pesquisaid'];
 
-                        $bdpat = new bd_patrimonio();
+                      $bdpat = new bd_patrimonio();
 
-                        $pat = $bdpat->pesquisaId($patrid);
-                        ?>  
-                        <?php include_once '../assets/patrimonio/listagemPatId.php';?><!-- PESQUISA ESPECÍFICA POR PATRIMÔNIO -->
-                                            
+                      $pat = $bdpat->pesquisaId($patrid);
+                      ?>  
+                      <?php include_once '../assets/patrimonio/listagemPatId.php';?><!-- PESQUISA ESPECÍFICA POR PATRIMÔNIO -->
+                      
                       
                       <?php else:?>
-                          <p class="card-category"> Página: <?=$p_a?> de <?=$paginas?> Páginas</p>
-                          
-                          <?php include_once '../assets/patrimonio/listagemPat.php';?><!-- LISTA DE TODOS OS PATRIMÔNIOS -->
+                        <p class="card-category"> Página: <?=$p_a?> de <?=$paginas?> Páginas</p>
+                        
+                        <?php include_once '../assets/patrimonio/listagemPat.php';?><!-- LISTA DE TODOS OS PATRIMÔNIOS -->
 
                       <?php endif;?>
                     </div>
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
           </div>
         </div>
         <footer class="footer">
@@ -76,6 +76,6 @@ $anterior = $p_a - 1;
       </div>
     </div>
   </body>
-<?php include_once '../assets/carregaJS.php'; ?>
+  <?php include_once '../assets/carregaJS.php'; ?>
 
   </html>      
