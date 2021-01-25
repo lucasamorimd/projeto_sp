@@ -5,7 +5,7 @@ require '../vendor/permissoes.php';
 <!DOCTYPE html>
 <html>
 
-<head><meta charset="gb18030">
+<head><meta charset="UTF-8">
   <title>Patrimônios - Cadastro de Setor</title>
   <!-- Required meta tags -->
   
