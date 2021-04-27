@@ -55,7 +55,11 @@ para obter as notificações em tempo real de quando uma nova solicitação for 
   <a href="#" target="_blank"><img align="center" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MYSQL" /></a>
   <a href="#" target="_blank"><img align="center" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="JQUERY" /></a>
 </p>
+<h2 align="center">Tela de login</h2>
 <img src="http://portfolio.lad566.com.br/site01.jpg" align="center" title="tela de login">
+<h2 align="center">Tela inicial</h2>
+<img src="https://lad566.com.br/site03.jpg" align="center" title="Tela inicial">
+
   
 
 
