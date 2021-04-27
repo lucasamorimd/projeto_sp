@@ -48,7 +48,12 @@ para obter as notificações em tempo real de quando uma nova solicitação for 
 </ul>
 <h2 align="center"> Principais tecnologias </h2>
 <p>
-
+  <a href="#" target="_blank"><img align="center" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /></a>
+  <a href="#" target="_blank"><img align="center" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" /></a>
+  <a href="#" target="_blank"><img align="center" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" /></a>
+  <a href="#" target="_blank"><img align="center" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JAVASCRIPT" /></a>
+  <a href="#" target="_blank"><img align="center" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MYSQL" /></a>
+  <a href="#" target="_blank"><img align="center" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="JQUERY" /></a>
 </p>
   
 
